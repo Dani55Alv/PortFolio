@@ -1,0 +1,101 @@
+/* =========================================
+   RESET BÁSICO
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Un gris muy claro y elegante */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* =========================================
+   CONTENEDOR DE PROYECTOS (FLEXBOX)
+   ========================================= */
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los proyectos bajen de línea si no caben */
+    gap: 30px; /* Espacio entre tarjetas de proyectos */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   TARJETA DEL PROYECTO
+   ========================================= */
+.proyecto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima del proyecto */
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   IMAGEN DEL PROYECTO
+   ========================================= */
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 8px;
+    background-color: #e0e0e0; /* Color gris de fondo por si la imagen no carga */
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   ENLACES / BOTONES
+   ========================================= */
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.proyecto a {
+    text-decoration: none;
+    background-color: #3498db; /* Azul moderno */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por los botones */
+.proyecto a:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+}
